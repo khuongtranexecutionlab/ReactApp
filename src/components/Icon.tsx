@@ -398,6 +398,45 @@ const ICon = {
     <svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6' fill='none'>
       <circle cx='3' cy='3' r='3' fill='#333333' />
     </svg>
+  ),
+  ArrowQuizLeft: () => (
+    <svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' fill='none'>
+      <circle cx='25' cy='25' r='25' fill='url(#paint0_linear_1_279)' />
+      <path
+        d='M30 16L20 25L30 34'
+        stroke='white'
+        strokeWidth='2'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <defs>
+        <linearGradient
+          id='paint0_linear_1_279'
+          x1='-17.9333'
+          y1='-17.75'
+          x2='103.201'
+          y2='60.2107'
+          gradientUnits='userSpaceOnUse'
+        >
+          <stop stopColor='#3550DC' />
+          <stop offset='1' stopColor='#27E9F7' />
+        </linearGradient>
+      </defs>
+    </svg>
+  ),
+  ArrowQuizRight: () => (
+    <svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' fill='none'>
+      <circle cx='25' cy='25' r='25' fill='#D4D4D4' />
+      <path
+        d='M20 34L30 25L20 16'
+        stroke='white'
+        strokeWidth='2'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
   )
 };
 
