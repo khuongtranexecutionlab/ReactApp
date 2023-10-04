@@ -276,6 +276,128 @@ const ICon = {
         strokeLinejoin='round'
       />
     </svg>
+  ),
+  DocsTarget: () => (
+    <div className='relative'>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='40'
+        height='40'
+        viewBox='0 0 40 40'
+        fill='none'
+      >
+        <circle cx='20' cy='20' r='20' fill='#333333' />
+      </svg>
+      <div className='absolute top-2 right-2'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+        >
+          <path
+            d='M17.27 20.16H6.94996C6.22996 20.16 5.64996 19.58 5.64996 18.86V5.94999C5.64996 5.22999 6.22996 4.64999 6.94996 4.64999H17.27C17.99 4.64999 18.57 5.22999 18.57 5.94999V18.86C18.57 19.58 17.99 20.16 17.27 20.16Z'
+            stroke='white'
+            strokeWidth='1.2'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+          <path
+            d='M9.07005 10.43H13.1501'
+            stroke='white'
+            strokeWidth='1.2'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+          <path
+            d='M9.07005 14.38H15.1501'
+            stroke='white'
+            strokeWidth='1.2'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+        </svg>
+      </div>
+    </div>
+  ),
+  ClockTarget: () => (
+    <div className='relative'>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='40'
+        height='40'
+        viewBox='0 0 40 40'
+        fill='none'
+      >
+        <circle cx='20' cy='20' r='20' fill='#333333' />
+      </svg>
+      <div className='absolute top-2 right-2'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+        >
+          <path
+            d='M12.46 21.32C17.3532 21.32 21.32 17.3532 21.32 12.46C21.32 7.56676 17.3532 3.6 12.46 3.6C7.56676 3.6 3.60001 7.56676 3.60001 12.46C3.60001 17.3532 7.56676 21.32 12.46 21.32Z'
+            stroke='white'
+            strokeWidth='1.2'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+          <path
+            d='M12.46 7.62V12.46L15.44 13.88'
+            stroke='white'
+            strokeWidth='1.2'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+        </svg>
+      </div>
+    </div>
+  ),
+  StarTarget: () => (
+    <div className='relative'>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='40'
+        height='40'
+        viewBox='0 0 40 40'
+        fill='none'
+      >
+        <circle cx='20' cy='20' r='20' fill='#333333' />
+      </svg>
+      <div className='absolute top-2 right-2'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+        >
+          <path
+            d='M12.7 3.05L14.77 8.77L20.85 8.97C21.49 8.99 21.76 9.8 21.25 10.2L16.45 13.93L18.14 19.77C18.32 20.39 17.63 20.89 17.1 20.53L12.07 17.12L7.04 20.53C6.51 20.89 5.82 20.39 6 19.77L7.69 13.93L2.87 10.2C2.36 9.81 2.63 8.99 3.27 8.97L9.35 8.77L11.42 3.05C11.63 2.45 12.48 2.45 12.7 3.05Z'
+            stroke='white'
+            strokeWidth='1.2'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+        </svg>
+      </div>
+    </div>
+  ),
+  Round: () => (
+    <svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6' fill='none'>
+      <circle cx='3' cy='3' r='3' fill='#333333' />
+    </svg>
   )
 };
 
