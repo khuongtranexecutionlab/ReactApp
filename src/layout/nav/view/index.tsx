@@ -1,18 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import ICon from './Icon';
-
-const Nav: React.FC = () => {
-  const { pathname } = useLocation();
-
-  return (
-    <div className='flex justify-between items-center'>
-      <View path={pathname} />
-    </div>
-  );
-};
-
-export default Nav;
+import ICon from '../../../components/Icon';
 
 interface IViewProps {
   path: string;
@@ -20,7 +7,7 @@ interface IViewProps {
 
 const View: React.FC<IViewProps> = ({ path }) => {
   return (
-    <React.Fragment>
+    <div className='p-[20px] flex justify-between items-center'>
       {path !== '/' ? (
         <div className='flex gap-[10px] items-center'>
           <ICon.ArrowLeft />
@@ -83,11 +70,11 @@ const View: React.FC<IViewProps> = ({ path }) => {
               </linearGradient>
             </defs>
           </svg>
-          <p className='bg-gradient-to-r text-transparent from-blue-500 via-blue-400 to-blue-600 bg-clip-text'>
-            16:35
-          </p>
+          <p className='text-gradient'>16:35</p>
         </div>
       )}
-    </React.Fragment>
+    </div>
   );
 };
+
+export default View;

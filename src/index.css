@@ -8,3 +8,14 @@
     color: #fff;
   }
 }
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text;
+    background: var(--1, linear-gradient(123deg, #3550dc -35.72%, #27e9f7 172.73%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .background-gradient {
+    background: var(--1, linear-gradient(123deg, #3550dc -35.72%, #27e9f7 172.73%));
+  }
+}
