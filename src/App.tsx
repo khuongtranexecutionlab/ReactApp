@@ -1,8 +1,20 @@
 import React from 'react';
-import './App.css';
+import type { RouteObject } from 'react-router-dom';
+import Pages from './pages';
 
-const App: React.FC = () => {
-  return <div className=''>App</div>;
-};
+const MyRoutes: RouteObject[] = [
+  {
+    path: '/',
+    element: <Pages.Home />
+  },
+  {
+    path: '/detail',
+    element: <Pages.Detail />
+  },
+  {
+    path: '/quiz',
+    element: <Pages.Quiz />
+  }
+];
 
-export default App;
+export default MyRoutes;
