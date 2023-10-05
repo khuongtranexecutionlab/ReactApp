@@ -8,7 +8,9 @@ const Container: React.FC = () => {
       <Nav />
       <div className='max-h-[630px] p-4 rounded-tl-[32px] rounded-tr-[32px] bg-white h-full text-black'>
         <div className='w-[48px] h-[4px] bg-gradient-to-r text-transparent from-blue-500 via-blue-400 to-blue-600 mx-auto rounded-[10px] ' />
-        <Outlet />
+        <React.Suspense fallback={null}>
+          <Outlet />
+        </React.Suspense>
       </div>
     </div>
   );

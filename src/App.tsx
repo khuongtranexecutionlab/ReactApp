@@ -6,11 +6,16 @@ import Pages from './pages';
 const PATH_HOME = '/';
 const PATH_DETAIL = '/detail';
 const PATH_QUIZ = '/quiz';
+const PATH_LOGIN = '/login';
 
 const MyRoutes: RouteObject[] = [
   {
     element: <Layout.Container />,
     children: [
+      {
+        path: PATH_LOGIN,
+        element: <Pages.Login />
+      },
       {
         path: PATH_HOME,
         element: <Pages.Home />

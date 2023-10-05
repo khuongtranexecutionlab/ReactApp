@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ICon from '../../components/Icon';
 
 const Home: React.FC = () => {
@@ -15,9 +16,11 @@ const Home: React.FC = () => {
       <p className='mt-4 text-[#333333] text-lg font-bold'>Continue Quiz</p>
       <CardQuiz />
       <div className='mt-[80px]'>
-        <button className='w-[327px] h-[50px] rounded-[5px] background-gradient text-white'>
-          Start Quiz
-        </button>
+        <Link to='/detail'>
+          <button className='w-[327px] h-[50px] rounded-[5px] background-gradient text-white'>
+            Start Quiz
+          </button>
+        </Link>
       </div>
     </div>
   );
