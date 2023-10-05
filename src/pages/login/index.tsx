@@ -1,20 +1,25 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useAppDispatch } from '../../app/hook';
+import { login } from '../../features/login';
 
 const Login: React.FC = () => {
   const [loading, setLoading] = React.useState(false);
+  const dispatch = useAppDispatch();
 
   const formik = useFormik({
     initialValues: {
-      email: '',
-      password: ''
+      email: 'test@gmail.com',
+      password: '12345678'
     },
     validationSchema: Yup.object({
-      email: Yup.string().email('Invalid email address').required()
+      email: Yup.string().email('Invalid email address').required(),
+      password: Yup.string().min(8, 'Password must be 8 or more characters').required()
     }),
     onSubmit: (values, { resetForm }) => {
-      alert(JSON.stringify(values));
+      //   const data = JSON.stringify(values) as unknown as AuthState;
+      dispatch(login(values) as any);
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
