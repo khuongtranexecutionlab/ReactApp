@@ -8,7 +8,7 @@ const DemoSWR: React.FC = () => {
     return res.title;
   };
 
-  const { data, isLoading } = useSWR('/api/user/123', fetcher);
+  const { data, isLoading } = useSWR('/todos', fetcher);
   if (isLoading) return <div>loading...</div>;
 
   // render data
