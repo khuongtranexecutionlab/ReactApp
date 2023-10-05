@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthContext from '../../../app/context';
 import ICon from '../../../components/Icon';
 
 interface ITitle {
@@ -6,16 +7,17 @@ interface ITitle {
 }
 
 const Title: React.FC<ITitle> = ({ path }) => {
+  const { auth } = React.useContext(AuthContext);
   const render = {
-    '/': <TitleHome />,
+    '/': <TitleHome auth={auth} />,
     '/detail': <TitleDetail />
   }[path];
   return <React.Fragment>{render}</React.Fragment>;
 };
 
-const TitleHome: React.FC = () => (
+const TitleHome: React.FC<{ auth: string }> = ({ auth }) => (
   <div className='px-[20px]'>
-    <p>Hello, James</p>
+    <p>Hello, {auth}</p>
     <p className='font-[700px] text-[20px]'>Let&apos;s test your knowledge</p>
     <div className='relative my-6'>
       <input className='rounded-[35px] h-[40px] pl-8 w-full' placeholder='search' />
