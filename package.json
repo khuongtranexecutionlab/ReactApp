@@ -71,10 +71,5 @@
     "*.{json,js,ts,jsx,tsx,html}": [
       "prettier --write --ignore-unknown"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
